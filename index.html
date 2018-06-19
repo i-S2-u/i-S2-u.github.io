@@ -1,80 +1,15 @@
 <html>
 	<head>
-		<script type="text/javascript">
-			var isDeclaring = true;
-			
-			function changeStyle(){
-				if(isDeclaring){
-					var tudo = document.getElementById("tudo");
-					tudo.style.color = "red";
-					tudo.style.backgroundColor= "white";
-					
-					document.getElementById("texto").innerHTML = "<3";
-					document.getElementById("botao").innerHTML = "com você";
-				}
-				else{
-					var tudo = document.getElementById("tudo");
-					tudo.style.color = "white";
-					tudo.style.backgroundColor= "black";
-					
-					document.getElementById("texto").innerHTML = ";_;";
-					document.getElementById("botao").innerHTML = "sem você";
-				}
-				
-				isDeclaring = (isDeclaring === false);
-			}
-		</script>
-	
-		<style type="text/css">
-			body {font-size: 30px;}
-
-
-			div {
-			top: 0; 
-			bottom: 0;
-			right: 0;
-			left: 0; 
-			
-			position: fixed;
-			margin: auto;
-			
-			display: flex; 
-			align-items: center; 
-			justify-content: center;
-			
-			flex-direction: column;
-			
-			background-color: black;
-			color: white;
-			
-			
-			}
-			
-			
-			button {
-			height: 80px;
-			width: 80px;
-			
-			border: solid 5px white;
-			border-radius: 50%;
-			
-			background-color: black;
-			color: white;
-			
-			
-			}
-			
-			
-		</style>
+		<script src="script.js">
 		
 	</head>
+			
 	<body>
+		
 		<div id="tudo">
 			<h1 id="texto">;_;</h1>
 			<button id="botao" onclick="changeStyle()">sem você</button>
 		</div>
-		
-
 		
 	</body>
 </html>
